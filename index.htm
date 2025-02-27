@@ -13,8 +13,6 @@
     /*! This file is auto-generated */
     !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
   </script>
-  <!-- <link rel='stylesheet' id='sina-morphing-anim-css' href='https://solribbit.com/wp-content/plugins/sina-extension-for-elementor/assets/css/sina-morphing.min.css?ver=3.4.2' media='all' /> -->
-  <!-- <link rel='stylesheet' id='pa-frontend-css' href='https://solribbit.com/wp-content/uploads/premium-addons-elementor/pa-frontend-80b3bfda2.min.css?ver=1717087815' media='all' /> -->
   <link rel="stylesheet" type="text/css" href="wp-content/cache/wpfc-minified/e454unqc/smyi.css" media="all">
   <style id='wp-emoji-styles-inline-css'>
     img.wp-smiley,
@@ -30,7 +28,6 @@
       padding: 0 !important;
     }
   </style>
-  <!-- <link rel='stylesheet' id='wp-block-library-css' href='https://solribbit.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.3' media='all' /> -->
   <link rel="stylesheet" type="text/css" href="wp-content/cache/wpfc-minified/7aafgesr/smyi.css" media="all">
   <style id='classic-theme-styles-inline-css'>
     /*! This file is auto-generated */
@@ -385,10 +382,6 @@
       line-height: 1.6;
     }
   </style>
-  <!-- <link rel='stylesheet' id='sfhg_iframe_style-css' href='https://solribbit.com/wp-content/plugins/scoreboard-for-html5-game/css/iframe.css?ver=1.7' media='all' /> -->
-  <!-- <link rel='stylesheet' id='icofont-css' href='https://solribbit.com/wp-content/plugins/sina-extension-for-elementor/admin/assets/css/icofont.min.css?ver=3.4.2' media='all' /> -->
-  <!-- <link rel='stylesheet' id='font-awesome-css' href='https://solribbit.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' /> -->
-  <!-- <link rel='stylesheet' id='twentytwenty-style-css' href='https://solribbit.com/wp-content/themes/twentytwenty/style.css?ver=2.0' media='all' /> -->
   <link rel="stylesheet" type="text/css" href="wp-content/cache/wpfc-minified/7c45zkph/smyi.css" media="all">
   <style id='twentytwenty-style-inline-css'>
     .color-accent,
@@ -2344,9 +2337,12 @@
   <link rel="icon" href="wp-content/uploads/2024/05/cropped-ribbit-32x32.png" sizes="32x32">
   <link rel="icon" href="wp-content/uploads/2024/05/cropped-ribbit-192x192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="wp-content/uploads/2024/05/cropped-ribbit-180x180.png">
-  <meta name="msapplication-TileImage"
-    content="https://solribbit.com/wp-content/uploads/2024/05/cropped-ribbit-270x270.png">
-  <meta property="og:image" content="https://solribbit.com/social-image.jpg/">
+  <meta name="msapplication-TileImage" content="wp-content/uploads/2024/05/cropped-ribbit-270x270.png">
+  <meta property="og:image" content="wp-content/uploads/2024/05/cropped-ribbit-270x270.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body
@@ -3010,7 +3006,7 @@
 
         <style>
           body {
-            font-family: 'Sniglet', sans-serif !important;
+            font-family: "Sniglet", system-ui !important;
             font-weight: 400 !important;
           }
 
