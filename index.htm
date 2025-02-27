@@ -2833,40 +2833,65 @@
             </div>
           </div>
         </section>
-        <section data-particle_enable="false" data-particle-mobile-disabled="false"
-          class="ob-is-breaking-bad elementor-section elementor-top-section elementor-element elementor-element-84be95a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-id="84be95a" data-element_type="section"
-          data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ob_bbad_use_it&quot;:&quot;yes&quot;,&quot;_ob_bbad_sssic_use&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;}">
-          <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-row">
-              <div
-                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9dc48a1"
-                data-id="9dc48a1" data-element_type="column"
-                data-settings="{&quot;_ob_bbad_is_stalker&quot;:&quot;no&quot;,&quot;_ob_teleporter_use&quot;:false,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
-                <div class="elementor-column-wrap elementor-element-populated">
-                  <div class="elementor-widget-wrap">
-                    <div
-                      class="elementor-element elementor-element-f20ea10 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading"
-                      data-id="f20ea10" data-element_type="widget"
-                      data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_harakiri_text_clip&quot;:&quot;none&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}"
-                      data-widget_type="heading.default">
-                      <div class="elementor-widget-container" id="copyButton"
-                        style="display: flex; justify-content: center; align-items: center; gap: 8px; cursor: pointer;">
-                        <img src="wp-content\uploads\2024\05\copy_btn.png" alt="Copy icon."
-                          style="width: 30px; height: 30px;">
-                        <h2 class="elementor-heading-title elementor-size-default">CA:
-                          <span id="textToCopy">
-                            ACrrUpnd9uahMBenmHUosXLKKqBMgdQP7we3yqrui9Zx
-                          </span>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+        <style>
+          .ca-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: white;
+
+            background-color: #000000;
+            padding: 0 20px;
+
+            /* Add outline properties */
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            box-shadow:
+              0 0 0 4px rgba(0, 0, 0, 0.7),
+              0 0 0 8px rgba(0, 0, 0, 0.6),
+              0 0 0 12px rgba(0, 0, 0, 0.5),
+              0 0 0 16px rgba(0, 0, 0, 0.4),
+              0 0 0 20px rgba(0, 0, 0, 0.3),
+              0 0 0 24px rgba(0, 0, 0, 0.2),
+              0 0 0 28px rgba(0, 0, 0, 0.1),
+              0 0 0 32px rgba(0, 0, 0, 0.05);
+
+            @media (max-width: 767.98px) {
+              padding: 0 10px;
+            }
+          }
+
+          .ca-container h2 {
+            font-weight: normal;
+
+            font-size: 25px;
+
+            @media (max-width: 767.98px) {
+              font-size: 14px;
+            }
+          }
+        </style>
+
+        <!-- For left to right movement -->
+        <div class="running-text" style="position: relative; top: 0; left: 0;">
+          <div class="running-text-container running-text-reverse" id="unique-id-3"></div>
+
+          <div class="ca-container" id="copyButton">
+            <img src="wp-content\uploads\2024\05\copy_btn.png" alt="Copy icon." style="width: 30px; height: 30px;">
+            <h2 class="elementor-heading-title elementor-size-default">CA:
+              <span id="textToCopy">
+                ACrrUpnd9uahMBenmHUosXLKKqBMgdQP7we3yqrui9Zx
+              </span>
+            </h2>
           </div>
-        </section>
+        </div>
+
         <section data-particle_enable="false" data-particle-mobile-disabled="false"
           class="ob-is-breaking-bad elementor-section elementor-top-section elementor-element elementor-element-81fc62f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
           data-id="81fc62f" data-element_type="section"
@@ -2978,7 +3003,77 @@
           </div>
         </section>
 
-        <div class="separator"></div>
+        <!-- For left to right movement -->
+        <div class="running-text">
+          <div class="running-text-container" id="unique-id-1"></div>
+        </div>
+
+        <style>
+          .running-text {
+            overflow: hidden;
+            background: transparent;
+            white-space: nowrap;
+            padding: 10px 0;
+            position: relative;
+            color: white !important;
+            -webkit-background-clip: text;
+            background-clip: text;
+            mix-blend-mode: normal;
+          }
+
+          .running-text-container {
+            display: flex;
+            background: transparent;
+            mix-blend-mode: normal;
+          }
+
+          .running-text-item {
+            font-family: 'Sniglet', Sans-serif;
+            font-size: 32px;
+            padding-right: 50px;
+            animation: scrollLeft 15s linear infinite;
+            background: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            mix-blend-mode: normal;
+            color: white;
+
+            @media (max-width: 767.98px) {
+              font-size: 16px;
+            }
+          }
+
+          /* Regular left-to-right movement */
+          @keyframes scrollLeft {
+            from {
+              transform: translateX(-100%);
+            }
+
+            to {
+              transform: translateX(0);
+            }
+          }
+
+          /* Right-to-left movement */
+          @keyframes scrollRight {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(-100%);
+            }
+          }
+
+          /* Apply different animation based on class */
+          .running-text-container .running-text-item {
+            animation: scrollLeft 2s linear infinite;
+          }
+
+          .running-text-container.running-text-reverse .running-text-item {
+            animation: scrollRight 2s linear infinite;
+          }
+        </style>
 
         <section data-particle_enable="false" data-particle-mobile-disabled="false"
           class="ob-is-breaking-bad elementor-section elementor-top-section elementor-element elementor-element-ce8db99 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -3089,7 +3184,10 @@
           </div>
         </section>
 
-        <div class="separator"></div>
+        <!-- For left to right movement -->
+        <div class="running-text">
+          <div class="running-text-container running-text-reverse" id="unique-id-2"></div>
+        </div>
 
 
         <section data-particle_enable="false" data-particle-mobile-disabled="false"
@@ -3251,6 +3349,12 @@
             </div>
           </div>
         </section>
+
+        <!-- For left to right movement -->
+        <div class="running-text">
+          <div class="running-text-container" id="unique-id-4"></div>
+        </div>
+
         <section data-particle_enable="false" data-particle-mobile-disabled="false"
           class="ob-is-breaking-bad elementor-section elementor-top-section elementor-element elementor-element-4e286e6 premium-parallax-yes elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
           data-pa-parallax="{&quot;type&quot;:&quot;automove&quot;,&quot;speed&quot;:3,&quot;direction&quot;:&quot;left&quot;}"
@@ -3795,6 +3899,79 @@
       } catch (err) {
         console.error('Failed to copy text: ', err);
       }
+    });
+  </script>
+  <script>
+    class RunningText {
+      constructor(containerId, direction = 'left') {
+        this.container = document.getElementById(containerId);
+        this.direction = direction;
+        this.text = '$MINIK ';
+        this.itemWidth = 120; // Approximate width of one item in pixels
+        this.init();
+      }
+
+      init() {
+        // Calculate initial items needed
+        const screenWidth = window.innerWidth;
+        const itemsNeeded = Math.ceil((screenWidth * 2) / this.itemWidth);
+
+        // Create initial items
+        this.addItems(itemsNeeded);
+
+        // Set up periodic checks and resize handler
+        this.setupEventListeners();
+      }
+
+      addItems(count) {
+        for (let i = 0; i < count; i++) {
+          const span = document.createElement('span');
+          span.className = 'running-text-item';
+          span.textContent = this.text;
+          this.container.appendChild(span);
+        }
+      }
+
+      checkAndAddItems() {
+        const screenWidth = window.innerWidth;
+        const lastItem = this.container.lastElementChild;
+        if (lastItem) {
+          const rect = lastItem.getBoundingClientRect();
+          if (rect.right < screenWidth * 2) {
+            this.addItems(1);
+          }
+        }
+      }
+
+      setupEventListeners() {
+        // Periodically check if more items are needed
+        setInterval(() => this.checkAndAddItems(), 1000);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+          const newScreenWidth = window.innerWidth;
+          const newItemsNeeded = Math.ceil((newScreenWidth * 2) / this.itemWidth);
+
+          while (this.container.children.length < newItemsNeeded) {
+            this.addItems(1);
+          }
+        });
+      }
+    }
+
+    // Initialize running text instances when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize left-to-right instance
+      new RunningText('unique-id-1', 'left');
+
+      // Initialize right-to-left instance
+      new RunningText('unique-id-2', 'right');
+
+      // Initialize right-to-left instance
+      new RunningText('unique-id-3', 'left');
+
+      // Initialize right-to-left instance
+      new RunningText('unique-id-4', 'right');
     });
   </script>
   <script>
